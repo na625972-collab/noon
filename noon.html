@@ -1,0 +1,66 @@
+﻿
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I Love You ??</title>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.box{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  width:300px;
+}
+h2{color:#e6005c;}
+button{
+  padding:10px 20px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+#yes{
+  background:#25D366;
+  color:white;
+}
+#no{
+  background:#ff4d4d;
+  color:white;
+  position:absolute;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+  <h2>Do you love me? ??</h2>
+  <br>
+  <button id="yes" onclick="yesClick()">YES ??</button>
+  <button id="no" onmouseover="moveNo()">NO ??</button>
+</div>
+
+<script>
+function moveNo(){
+  let x=Math.random()*200;
+  let y=Math.random()*200;
+  document.getElementById("no").style.transform =
+   `translate(${x}px,${y}px)`;
+}
+
+function yesClick(){
+  window.location.href=
+  "https://wa.me/923132054993?text=Yes%20I%20love%20you%20too%20??";
+}
+</script>
+</body>
+</html>
